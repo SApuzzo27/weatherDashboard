@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <!-- Bootstrap CSS CDN  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/weather.css">
+</head>
+
+<body>
+
+
+    <div class="jumbotron mt-3" id="dashboard">
+        <div class="container">
+            <h1 class="display-4 text-center"><i class = "fas fa-sun"></i>Weather Dashboard </h1>
+        
+    </div>
+    </div>
+
+    <!-- Search Container present/past btns -->
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-3 bg-light">
+                <h5 class="mt-1">Search for a city:</h5>
+                <div class="form-inline form-group">
+                    <input type="text" id="city" placeholder="City">
+                    <button id="submitCity" class ="listbtn"><i class = "fas fa-search-location">Search</i>
+                    <i class="icon-bar"></span>
+                    </button>
+
+                    <div id="error"></div>
+
+                </div>
+
+                <ul class="list-group history"></ul>
+                
+            </aside>
+            <!-- <div class="col-lg-9"> -->
+
+
+                <!-- create container for current weather -->
+                <div class = "container">
+                <div class="md-3 col-lg-10 pt-3 content" id=today></div>
+                </div>
+
+                <!-- create container for forecast -->
+                <div class = "container">
+                <div class="five-day-div bg-light p-3 m-3 w-100" id=forecast>
+                <div class = "card">
+
+            </div>
+                </div>
+                </div>
+
+
+
+                    <!--jQuery JS -->
+                    <script src="https://code.jquery.com/jquery.js"></script>
+                    <script src="https://kit.fontawesome.com/2e0dc01201.js" crossorigin="anonymous"></script>
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+                    <!-- Code to the JavaScript File -->
+                    <script src="./assets/weather.js"></script>
+</body>
+
+</html>
