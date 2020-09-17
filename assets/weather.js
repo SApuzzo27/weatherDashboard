@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //Api Key
     var apiKey = "188366c4a74fbb8bc6a6f7d868a6bfa2";
-    var queryUrl = "http://api.openweathermap.org/data/2.5/weather?q="
+    var queryUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
 
         // create click event for city search 
         $("#submitCity").on("click", function () {
@@ -45,7 +45,7 @@ $(document).ready(function() {
             // make a request to API openweahtermap
             
             $.ajax({
-                url: queryUrl + searchValue + "&appid=" + apiKey +"&units=imperial",
+                url: queryUrl + searchValue + "&appid=" + apiKey + "&units=imperial",
                 method: "GET",
                 
             })
@@ -89,7 +89,7 @@ $(document).ready(function() {
         }
     
         function getForecast(searchValue) {
-            var queryUrl = "http://api.openweathermap.org/data/2.5/forecast?q="+ searchValue +"&appid=" + apiKey +"&units=imperial"
+            var queryUrl = "https://api.openweathermap.org/data/2.5/forecast?q="+ searchValue +"&appid=" + apiKey +"&units=imperial"
 
 
             $.ajax({
@@ -139,7 +139,7 @@ $(document).ready(function() {
         function getUVIndex(lat, lon) {
 
             $.ajax({
-                url: 'http://api.openweathermap.org/data/2.5/uvi?' + "&appid=" + apiKey + 
+                url: 'https://api.openweathermap.org/data/2.5/uvi?' + "&appid=" + apiKey + 
                 '&lat=' + lat + '&lon=' + lon,
                 method: "GET",
             
