@@ -1,7 +1,6 @@
 $(document).ready(function() {
-
-
-    var apiKey = "188366c4a74fbb8bc6a6f7d868a6bfa2"; 
+    //Api Key
+    var apiKey = "188366c4a74fbb8bc6a6f7d868a6bfa2";
 
 
         // create click event for city search 
@@ -15,18 +14,56 @@ $(document).ready(function() {
     
         });
 
+
         // history btn weather
         // $(".historyBtn").on("click", function () {
-        //     return getWeather();
+        //            return getWeather()
+    
+    //         console.log("clicked")
+
+    // // make a request to API openweahtermap
+    //         // console.log(searchValue)
+    //         $.ajax({
+    //             url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + apiKey,
+    //             method: "GET",
+                
+    //         })
+    //         .then(function (data) {
+    //             //console.log(data)
+
+    //               // clear any old content
+    //               $("#today").empty();
+    
+    //               // create html content for today weather
+
+    //               var card = $("<div>").addClass("card");
+    //               var body = $("<div>").addClass("card-body");
+    //               var title = $("<h3>").addClass("card-title").text(data.name + "(" + new Date().toLocaleDateString() + ")");
+    //               var image = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + data.weather[0].icon + ".png");
+    //               var temp = $("<p>").addClass("card-text").text("Temperature: " + data.main.temp + "F");
+    //               var humidity = $("<p>").addClass("card-text").text("Humidity: " + data.main.humidity + "%");
+    //               var wind = $("<p>").addClass("card-text").text("Wind Speed: " + data.wind.speed + "MPH");
+
+    //               // merge and add to the page
+    //               card.append(body);
+    //               title.append(image);
+    //               body.append(title, temp, humidity, wind);
+    //               $("#today").append(card);
+
+    //               // move to the next fuction 
+    //               getForecast(searchValue);
+    //               getUVIndex(data.coord.lat, data.coord.lon);
+
+    //           });
         
-        //     });
+    // });
         
     
         // when history list click, function makeRow is called
         function createRow(searchValue) {
     
             // console.log(searchValue)
-            var li = $("<button>").addClass("list-group-item historyBtn list-group-item-action").text(searchValue);
+            var li = $("<button>").addClass("list-group-item .historyBtn list-group-item-action").text(searchValue);
             $(".history").append(li);
     
         };
@@ -39,7 +76,7 @@ $(document).ready(function() {
             // make a request to API openweahtermap
             // console.log(searchValue)
             $.ajax({
-                url: 'http://api.openweathermap.org/data/2.5/weather?q=' + searchValue + "&units=imperial" + "&appid=" + apiKey,
+                url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=" + apiKey,
                 method: "GET",
                 
             })
@@ -86,7 +123,7 @@ $(document).ready(function() {
     
         function getForecast(searchValue) {
             $.ajax({
-                url: 'http://api.openweathermap.org/data/2.5/forecast?q=' + searchValue + "&appid=" + apiKey+"&units=imperial",
+                url: 'http://api.openweathermap.org/data/2.5/forecast?q=' + searchValue + "&appid=" + apiKey ,
                 method: "GET",
     
             })
