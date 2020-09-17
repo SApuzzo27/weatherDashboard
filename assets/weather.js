@@ -40,12 +40,12 @@ $(document).ready(function() {
         function getWeather(searchValue) {
     
             // create a var and assign the value received back from API
-          
+        
             
             // make a request to API openweahtermap
             
             $.ajax({
-                url: queryUrl + searchValue + "&appid=" + apiKey,
+                url: queryUrl + searchValue + "&appid=" + apiKey +"&units=imperial",
                 method: "GET",
                 
             })
@@ -79,7 +79,7 @@ $(document).ready(function() {
                     title.append(image);
                     body.append(title, temp, humidity, wind);
                     $("#today").append(card);
-                 console.log("BREAK")
+                
                     // move to the next fuction 
                     getForecast(searchValue);
                     getUVIndex(data.coord.lat, data.coord.lon);
