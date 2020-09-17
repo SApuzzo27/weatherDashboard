@@ -1,6 +1,6 @@
 # weatherDashboard
 https://sapuzzo27.github.io/weatherDashboard
-![](https://github.com/SApuzzo27/weatherDashboard/blob/master/assets/images/weatherbackground.png)
+![](https://github.com/SApuzzo27/weatherDashboard/blob/master/assets/images/dashboard.png)
 
 # 06 Server-Side APIs: Weather Dashboard
 
