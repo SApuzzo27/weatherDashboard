@@ -89,7 +89,7 @@ $(document).ready(function() {
         }
     
         function getForecast(searchValue) {
-            var queryUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${searchValue}&appid=${apiKey}&units=imperial`
+            var queryUrl = "http://api.openweathermap.org/data/2.5/forecast?q="+ searchValue +"&appid=" + apiKey +"&units=imperial"
 
 
             $.ajax({
