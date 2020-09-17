@@ -16,10 +16,11 @@
 <body>
 
 
-    <div class="jumbotron" id="dashboard">
+    <div class="jumbotron mt-3" id="dashboard">
         <div class="container">
             <h1 class="display-4 text-center"><i class = "fas fa-sun"></i>Weather Dashboard </h1>
-        </div>
+            <div class="bg-image"></div>    
+    </div>
     </div>
 
     <!-- Search Container present/past btns -->
@@ -28,7 +29,7 @@
             <aside class="col-lg-3 bg-light">
                 <h5 class="mt-1">Search for a city:</h5>
                 <div class="form-inline form-group">
-                    <input type="text" id="city" placeholder="City" autofocus>
+                    <input type="text" id="city" placeholder="City">
                     <button id="submitCity" class ="listbtn"><i class = "fas fa-search-location">Search</i>
                     <i class="icon-bar"></span>
                     </button>
@@ -38,13 +39,14 @@
                 </div>
 
                 <ul class="list-group history"></ul>
+                
             </aside>
-
+            <!-- <div class="col-lg-9"> -->
 
 
                 <!-- create container for current weather -->
                 <div class = "container">
-                <div class="md-3 col-lg-9 pt-3 content" id=today></div>
+                <div class="md-3 col-lg-10 pt-3 content" id=today></div>
                 </div>
 
                 <!-- create container for forecast -->
@@ -56,13 +58,6 @@
                 </div>
                 </div>
 
-
-
-            </div>
-
-        </div>
-
-    </div>
 
 
                     <!--jQuery JS -->
