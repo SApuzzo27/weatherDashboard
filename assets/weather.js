@@ -7,7 +7,7 @@ $(document).ready(function() {
         $("#submitCity").on("click", function () {
         var searchValue = $("#city").val();
        // console.log(searchValue);
-         getWeather(searchValue);
+        getWeather(searchValue);
     
         });
     

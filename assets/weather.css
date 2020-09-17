@@ -1,14 +1,12 @@
-.jumbotron{
+#dashboard{
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    color: rgb(94, 45, 240);
-
-}
-/* .bg-img{
- background-image: url(Homework/weatherDashboard/assets/images/weatherbackground.png);
+    color: rgb(212, 82, 53);
+    background-image:url("./images/weatherbackground.png");
     background-size: cover;
     height: 100%;
-} */
+}
+
 .listbtn {
     background-color:  rgb(94, 45, 240);
     color: #ffffff;
