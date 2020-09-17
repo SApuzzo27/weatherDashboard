@@ -1,0 +1,28 @@
+.jumbotron{
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(94, 45, 240);
+
+}
+/* .bg-img{
+ background-image: url(Homework/weatherDashboard/assets/images/weatherbackground.png);
+    background-size: cover;
+    height: 100%;
+} */
+.listbtn {
+    background-color:  rgb(94, 45, 240);
+    color: #ffffff;
+
+}
+
+
+.left_div{
+    background-color: whitesmoke; 
+    height: 100%; 
+}
+
+.card-body{
+    background-color:  rgb(94, 45, 240);
+    color: white;
+    width: auto;
+}
